@@ -1,0 +1,123 @@
+version: "3.1"
+
+stories:
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: book_appointment
+  - action: utter_choose_category
+  - intent: choose_category
+    entities:
+    - category: Cardiology
+  - slot_was_set:
+    - category: Cardiology
+  - action: action_show_doctors
+  - intent: choose_doctor
+    entities:
+    - doctor: Dr.Moore
+  - slot_was_set:
+    - doctor: Dr.Moore
+  - action: action_show_doctors
+  - intent: choose_doctor
+    entities:
+    - doctor: Dr.Moore
+  - slot_was_set:
+    - doctor: Dr.Moore
+  - action: utter_ask_date
+  - intent: user_given_date
+    entities:
+    - time: Morning 10 am
+    - time: '2023-10-13T10:00:00.000+05:30'
+  - slot_was_set:
+    - time: '2023-10-13T10:00:00.000+05:30'
+  - action: utter_user_name
+  - intent: user_name
+    entities:
+    - person: Aravind samy
+  - slot_was_set:
+    - person: Aravind samy
+  - action: utter_ask_mobile
+  - intent: user_mobile
+    entities:
+    - number: '9952538089'
+  - slot_was_set:
+    - number: '9952538089'
+  - action: action_show_details
+
+- story: interactive_story_2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: book_appointment
+  - action: utter_choose_category
+  - intent: choose_category
+    entities:
+    - category: General catogory
+  - slot_was_set:
+    - category: General catogory
+  - action: action_show_doctors
+  - intent: choose_doctor
+    entities:
+    - doctor: Dr.Johnson
+  - slot_was_set:
+    - doctor: Dr.Johnson
+  - action: utter_ask_date
+  - intent: user_given_date
+    entities:
+    - time: tommarrow 2 pm
+    - time: '2023-10-13T14:00:00.000+05:30'
+  - slot_was_set:
+    - time: '2023-10-13T14:00:00.000+05:30'
+  - action: utter_user_name
+  - intent: user_name
+    entities:
+    - person: Vinayak Amirtharaj
+  - slot_was_set:
+    - person: Vinayak Amirtharaj
+  - action: utter_ask_mobile
+  - intent: user_mobile
+    entities:
+    - number: '8279787343'
+  - slot_was_set:
+    - number: '8279787343'
+  - action: action_show_details
+
+- story: interactive_story_2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: book_appointment
+  - action: utter_choose_category
+  - intent: choose_category
+    entities:
+    - category: General catogory
+  - slot_was_set:
+    - category: General catogory
+  - action: action_show_doctors
+  - intent: choose_doctor
+    entities:
+    - doctor: Dr.Johnson
+  - slot_was_set:
+    - doctor: Dr.Johnson
+  - action: utter_ask_date
+  - intent: user_given_date
+    entities:
+    - time: tommarrow 2 pm
+    - time: '2023-10-13T14:00:00.000+05:30'
+  - slot_was_set:
+    - time: '2023-10-13T14:00:00.000+05:30'
+  - action: utter_user_name
+  - intent: user_name
+    entities:
+    - person: Vinayak Amirtharaj
+  - slot_was_set:
+    - person: Vinayak Amirtharaj
+  - action: utter_ask_mobile
+  - intent: user_mobile
+    entities:
+    - number: '8279787343'
+  - slot_was_set:
+    - number: '8279787343'
+  - action: action_show_details

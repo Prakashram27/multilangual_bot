@@ -1,0 +1,41 @@
+# In your nlu.yml file
+
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - Hi
+    - Hello
+    - Hey there
+    - Hi, how can I help?
+    - Good day!
+
+- intent: book_appointment
+  examples: |
+    - I want to book an appointment
+    - Can I schedule an appointment?
+    - How do I make an appointment?
+    - Book a doctor's appointment
+    - Schedule an appointment with a physician
+
+- intent: choose_category
+  examples: |
+    - I'd like to choose a category
+    - Show me the available categories
+    - What categories are there?
+    - Choose a medical category
+
+- intent: choose_doctor
+  examples: |
+    - I want to select a doctor
+    - Show me the doctors in that category
+    - Choose a physician
+    - Select a specific doctor
+
+- intent: inform
+  examples: |
+    - [Cardiology](catogory)
+    - I want to see [General Surgery](catogory)
+    - I check for [General Catogory](catogory)
+

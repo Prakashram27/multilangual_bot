@@ -1,0 +1,96 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: what_is_corona_virus
+  - action: utter_what_is_corona_virus
+  - intent: origin_of_corona
+  - action: utter_origin_of_corona
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: start in english and end up in luganda
+  steps:
+  - intent: greet
+  - action: utter_greet 
+  - intent: kkolona_kye_ki
+  - action: utter_kkolona_kye_ki
+  - intent: kkolona_eva_wa
+  - action: utter_kkolona_eva_wa
+  - intent: goodbye_luganda
+  - action: utter_goodbye_luganda 
+
+
+- story: no greetings at all
+  steps:
+  - intent: what_is_corona_virus
+  - action: utter_what_is_corona_virus
+  - intent: origin_of_corona
+  - action: utter_origin_of_corona
+
+- story: start in luganda and end up in english
+  steps:
+  - intent: greet_luganda
+  - action: utter_greet_luganda
+  - intent: what_is_corona_virus
+  - action: utter_what_is_corona_virus
+  - intent: origin_of_corona
+  - action: utter_origin_of_corona
+
+- story: full luganda path
+  steps:
+  - intent: greet_luganda
+  - action: utter_greet_luganda
+  - intent: kkolona_kye_ki
+  - action: utter_kkolona_kye_ki
+  - intent: kkolona_eva_wa
+  - action: utter_kkolona_eva_wa
+  - intent: goodbye_luganda
+  - action: utter_goodbye_luganda
+
+
+- story: greet english, bye luganda
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: kkolona_kye_ki
+  - action: utter_kkolona_kye_ki
+  - intent: kkolona_eva_wa
+  - action: utter_kkolona_eva_wa
+  - intent: goodbye_luganda
+  - action: utter_goodbye_luganda
+
+- story: greet luganda and bye english
+  steps:
+  - intent: greet_luganda
+  - action: utter_greet_luganda
+  - intent: kkolona_kye_ki
+  - action: utter_kkolona_kye_ki
+  - intent: kkolona_eva_wa
+  - action: utter_kkolona_eva_wa
+  - intent: goodbye
+  - action: utter_goodbye
+
+
+- story: no greting just straight to the point
+  steps:
+  - intent: kkolona_kye_ki
+  - action: utter_kkolona_kye_ki
+  - intent: kkolona_eva_wa
+  - action: utter_kkolona_eva_wa
+
+
+- story: what is corona no greetings
+  steps:
+  - intent: kkolona_kye_ki
+  - action: utter_kkolona_kye_ki
+
+
+- story: where does corona come from luganda version
+  steps:
+  - intent: kkolona_eva_wa
+  - action: utter_kkolona_eva_wa

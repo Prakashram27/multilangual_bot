@@ -1,0 +1,4 @@
+Apple,39
+Banana,15
+Orange,21
+unknown,60

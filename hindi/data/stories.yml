@@ -1,85 +1,85 @@
 version: "3.1"
 
-stories:
+# stories:
 
-# - story: happy path
+# # - story: happy path
+# #   steps:
+# #   - intent: greet
+# #   - action: action_detect_language
+# #   - action: utter_greet
+# #   - intent: mood_great
+# #   - action: action_detect_language 
+# #   - action: utter_happy
+
+# # - story: sad path 1
+# #   steps:
+# #   - intent: greet
+# #   - action: action_detect_language 
+# #   - action: utter_greet
+# #   - intent: mood_unhappy
+# #   - action: action_detect_language 
+# #   - action: utter_cheer_up
+# #   - action: utter_did_that_help
+# #   - intent: affirm
+# #   - action: action_detect_language 
+# #   - action: utter_happy
+
+# # - story: sad path 2
+# #   steps:
+# #   - intent: greet
+# #   - action: utter_greet
+# #   - intent: mood_unhappy
+# #   - action: utter_cheer_up
+# #   - action: utter_did_that_help
+# #   - intent: deny
+# #   - action: utter_goodbye
+
+
+# # Cororna stories  
+# - story: corona_intro
 #   steps:
-#   - intent: greet
+#   - intent: corona
+#   - action: action_detect_language 
+#   - action: utter_corona
+
+# # - story: corona_precautions
+# #   steps:
+# #   - intent: precautions
+# #   - action: action_detect_language 
+# #   - action: utter_precautions
+
+# - story: corona_spread
+#   steps:
+#   - intent: spread
+#   - action: action_detect_language 
+#   - action: utter_spread
+
+# - story: corona_symptoms
+#   steps:
+#   - intent: symptoms
+#   - action: action_detect_language 
+#   - action: utter_symptoms
+
+# - story: corona_treatment
+#   steps:
+#   - intent: treatments
 #   - action: action_detect_language
-#   - action: utter_greet
-#   - intent: mood_great
-#   - action: action_detect_language 
-#   - action: utter_happy
+#   - action: utter_treatments
 
-# - story: sad path 1
+# - story: corona_govt_reg
 #   steps:
-#   - intent: greet
+#   - intent: government_reg
 #   - action: action_detect_language 
-#   - action: utter_greet
-#   - intent: mood_unhappy
-#   - action: action_detect_language 
-#   - action: utter_cheer_up
-#   - action: utter_did_that_help
-#   - intent: affirm
-#   - action: action_detect_language 
-#   - action: utter_happy
+#   - action: utter_government_reg
 
-# - story: sad path 2
+# - story: corona_hospital_visit
 #   steps:
-#   - intent: greet
-#   - action: utter_greet
-#   - intent: mood_unhappy
-#   - action: utter_cheer_up
-#   - action: utter_did_that_help
-#   - intent: deny
-#   - action: utter_goodbye
+#   - intent: hospital_visit
+#   - action: action_detect_language 
+#   - action: utter_hospital_visit
 
-
-# Cororna stories  
-- story: corona_intro
-  steps:
-  - intent: corona
-  - action: action_detect_language 
-  - action: utter_corona
-
-- story: corona_precautions
-  steps:
-  - intent: precautions
-  - action: action_detect_language 
-  - action: utter_precautions
-
-- story: corona_spread
-  steps:
-  - intent: spread
-  - action: action_detect_language 
-  - action: utter_spread
-
-- story: corona_symptoms
-  steps:
-  - intent: symptoms
-  - action: action_detect_language 
-  - action: utter_symptoms
-
-- story: corona_treatment
-  steps:
-  - intent: treatments
-  - action: action_detect_language
-  - action: utter_treatments
-
-- story: corona_govt_reg
-  steps:
-  - intent: government_reg
-  - action: action_detect_language 
-  - action: utter_government_reg
-
-- story: corona_hospital_visit
-  steps:
-  - intent: hospital_visit
-  - action: action_detect_language 
-  - action: utter_hospital_visit
-
-- story: corona_pandamic
-  steps:
-  - intent: pandamic
-  - action: action_detect_language 
-  - action: utter_pandamic
+# - story: corona_pandamic
+#   steps:
+#   - intent: pandamic
+#   - action: action_detect_language 
+#   - action: utter_pandamic

@@ -1,0 +1,40 @@
+version: "2.0"
+
+intents:
+  - greet_luganda
+  - goodbye_luganda
+  - kkolona_kye_ki
+  - kkolona_eva_wa
+  - greet
+  - goodbye
+  - what_is_corona_virus
+  - origin_of_corona
+
+
+responses:
+  utter_what_is_corona_virus:
+  - text: Coronaviruses (CoV) are a large family of viruses that cause symptoms ranging from the common cold to more serious illnesses, i.e. the Middle East Respiratory Syndrome (MERS) and Severe Acute Respiratory Syndrome (SARS). The new coronavirus (nCoV) is a new strain of coronavirus that had not yet been identified in humans.
+  utter_origin_of_corona:
+  - text: SARS-CoV-2 is a new strain of coronavirus that had not been seen in humans before. The epidemic began in the Chinese city of Wuhan, capital of the Hubei province. At first, the epidemic seemed to be linked to the South China Seafood City market. This market hosts merchants for seafood, poultry, bats, marmots and other wild animals, which indicates a probable animal origin of this virus. The virus was later confirmed to also transmit between humans. Cases have since been discovered in other regions of China and in other countries, often linked to a previous visit of Wuhan. The health authorities of the various affected countries are currently investigating this new coronavirus and the sources of the contamination.
+
+  utter_greet_luganda:
+  - text: "Gyebale Ko Nnawe."
+
+  utter_goodbye_luganda:
+  - text: "Kale Weraba"
+  - text: "Webare Nyo, bye"
+
+  utter_kkolona_kye_ki:
+  - text: Obuwuka bwa Kkolona (CoV) kika kya buwuka ekinene ekireeta obubonero omuli ssenyiga owa bulijjo kko n'endwadde endala enkakali, kwe gamba. lumiimamawugwe ow'ekiziyiro (MERS) ne Lumiimamawugwe akwatirawo (SARS). Ekika ky'akawuka ka ka Kkolona ekipya (nCoV) ky'ekika ky'akawuka ka Kkolona ekitannaba kuzuulibwa mu bantu.
+
+  utter_kkolona_eva_wa:
+  - text: SARS-CoV-2 kika ky'akawuka ka Kkolona ekibadde tekirabwangako mu bantu. Nnawookeera ono yatandikira mu kibuga kya Kyayina ekiyitibwa Wuhan, era nga kino kye kibuga ky'essaza lya Hubei ekikulu. Mu kusooka nnawookeera ono yasooka kulowoozebwa nti yali ayina akakwate ku katale k'ekibuga k'obuukiikaddyo bwa China akatunda emmere ey'omu nnyanja. Akatale kano kabeeramu abasuubuzi b'emmere ey'omu nnyanja, ebinyonyi ebirundibwa awaka obuwundo kaamuje n'ebisolo ebirala eby'omu nsiko, ekyoleka okuteebereza kw'ensibuko y'akawuka kano okuva mu bisolo. Akawuka kano oluvannyuma kyakakasibwa nti kasobola n'okutambuzibwa okuva ku muntu omu okudda ku mulala. Abantu abakwatiddwa akawuka kano n'okuva olwo abazzenga bazuulibwa mu bitundu bya China ebirala wamu ne mu mawanga amalala kiyungibwa ku kukyala kwabwe emabega mu Wuhan. Aboobuyinza mu by'ebyobulamu mu mawanga ag'enjawulo agakoseddwa ekirwadde kino bali mu kunoonyereza ku kawuka ka Kkolona kano akaggya era n'ensibuko yaako we kava okusaasaana.
+
+  utter_greet:
+  - text: "Hey how is it going?"
+
+  utter_goodbye:
+  - text: "Alright then, thanks and bye."
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

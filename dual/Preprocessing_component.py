@@ -1,5 +1,8 @@
 from typing import Dict, Text, Any, List
 from googletrans import Translator
+from rasa_sdk import Action, Tracker
+from langdetect import detect
+from rasa_sdk.events import SlotSet
 # from typing import List, Dict
 # from rasa.shared.nlu.training_data.message import Message
 
@@ -53,14 +56,36 @@ class Preprocess(GraphComponent):
     #             message.data['text'] = msg
     #     return messages
 
-    def process(self,messages:List[Message]) -> List[Message]:
-    # # Initialize the Google Translate API client
+    # def process(self,messages:List[Message],tracker: Tracker) -> List[Message]:
+    # # # Initialize the Google Translate API client
+    #     translator = Translator()
+    #     for message in messages:
+    #         # if 'text' in message.data.keys():
+    #         msg = message.data['text']
+    #         language = detect(msg)
+
+    #         translation = translator.translate(msg, src=language, dest='en')
+    #         message.data['text'] = translation.text
+    #         print(translation.text)
+
+
+
+    #     return messages
+    def process(self, messages: List[Message]) -> List[Message]:
+        # Initialize the Google Translate API client
         translator = Translator()
+
         for message in messages:
-            # if 'text' in message.data.keys():
-            msg = message.data['text']
-            translation = translator.translate(msg, src='auto', dest='en')
-            message.data['text'] = translation.text
-            print(translation.text)
+            if text in message.data:  # Check if the 'text' key is present in the message data
+                text = message.data[text]
+                language = detect(text)
+
+                # Set the detected language as a slot for later use
+                message.set(SlotSet("langcode", language))
+
+                # Perform language translation if the detected language is not English ('en')
+                if language != "en":
+                    translation = translator.translate(text, src=language, dest='en')
+                    message.data[text] = translation.text
 
         return messages

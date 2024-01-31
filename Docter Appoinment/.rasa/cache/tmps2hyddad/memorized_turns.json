@@ -1,0 +1,11 @@
+{
+  "lookup": {
+    "eJyLrq6NBQAEOAGx": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taS2NhYA6dwbhQ==": "utter_greet",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfEQpbhMiAUAQvc0lw==": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfEQpeSZQMAVSfn52fGJBQX5QIFcoEhtbSwAJ8FTDQ==": "action_show_doctors",
+    "eJydjkEKg0AMRa+SAxRpt3MVkTC1wQ7VyZBEXQzevYHpXuku//Pykr4eN6hFaMM4WuIcoLYBc1wowC/MSY2ys6uSOJOyRwswCZEdJ47VjAQb+p/h5Isn8wdjKezF4s1Fnb55xxePxqK+oTObOtqaAP2juw9Xjg1fSSh8EQ==": "action_listen",
+    "eJytjkEKwzAMBL/iB5TSXv2VEITrisY0sYyktAfjv1fg0GtC6U27jHZ3qO3kamF8QYiaKHtX+wE5LOjdJuYkitnYVZCNSdmkevdgRG07GasqMnT0t4SdFTeiJ4RSyIzFnINxMtEb7hSVWOxDZlIxtDveDdfzZfxb2Xf7wZo4EQlu81obPw3XoTg=": "action_book_appointment",
+    "eJytjkEKwzAMBL/iB5TSXP2VEITjisY0sYyltAeTv1fg0EsPMaE37TLa3b5sF1NSxhc4L4GiNaUeEN2C1uxiDiwYlV0ZszIhqhRrHhlRtoOMVQQzVPRcwsGKkegJLiVSY1GnMY4nesOdvFBm/eCZhBWtjjV9d70Nfyv7bm+s8RMR4z6vseNn2tm24QNLysqJ": "action_listen"
+  }
+}

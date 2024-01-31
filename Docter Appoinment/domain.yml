@@ -1,0 +1,99 @@
+version: "3.1"
+
+intents:
+  - greet
+  - book_appointment
+  - choose_category
+  - choose_doctor
+
+entities:
+  - category
+  - doctor
+
+slots:
+  category:
+    type: text
+    initial_value: null
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: category
+
+
+  doctor:
+    type: text
+    initial_value: null
+    mappings:
+      - type: from_entity
+        entity: doctor
+
+
+# Define the categories and doctors
+categories:
+  - name: General Category
+    doctors:
+      - name: Doctor A
+        role: General Physician
+      - name: Doctor B
+        role: Family Medicine
+      - name: Doctor C
+        role: Pediatrician
+
+  - name: General Surgery
+    doctors:
+      - name: Doctor X
+        role: General Surgeon
+      - name: Doctor Y
+        role: Orthopedic Surgeon
+
+  - name: Cardiology
+    doctors:
+      - name: Doctor M
+        role: Cardiologist
+      - name: Doctor N
+        role: Interventional Cardiologist
+      - name: Doctor O
+        role: Electrophysiologist
+
+actions:
+  - action_greet
+  - action_show_categories
+  - action_show_doctors
+  - action_book_appointment
+
+responses:
+  utter_greet:
+    - text: "Hi, I'm your appointment booking bot. How can I help you?"
+      buttons:
+        - title: "Booking Appointment"
+          payload: "/book_appointment"
+
+  utter_choose_category:
+    - text: "Please choose a category"
+      buttons:
+        - title: "General Category"
+          payload: /inform{"category":"General Category"}
+        - title: "General Surgery"
+          payload: /inform{"category":"General Surgery"}
+        - title: "Cardiology"
+          payload: /inform{"category":"Cardiology"}
+
+  utter_choose_doctor:
+    - text: "Please choose a doctor from {{ category }}:"
+      buttons:
+        - title: "Doctor 1"
+          payload: "/choose_doctor{\"doctor\": \"Doctor 1\"}"
+        - title: "Doctor 2"
+          payload: "/choose_doctor{\"doctor\": \"Doctor 2\"}"
+        # Add more doctors as needed
+
+forms:
+  appointment_form:
+    ignored_intents: []
+    required_slots:
+    - category
+    - doctor
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

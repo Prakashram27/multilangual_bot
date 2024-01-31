@@ -1,0 +1,25 @@
+version: "2.0"
+nlu:
+- intent: what_is_corona_virus
+  examples: |
+    - what is corona virus?
+    - define the corona virus.
+    - tell me what corona virus is.
+    - explain corona virus to me.
+    - how would you define corona virus
+    - corona virus?
+    - do you know what corona virus is?
+    - is corona virus covid?
+    - what is the difference between covid and corona?
+    - if covid corona?
+    - what is covid?
+    - what is covid-19?
+    - may I know about covid-19?
+
+- intent: origin_of_corona
+  examples: |
+    - Where did it come from?
+    - What is coronas origin?
+    - from where is covid-19?
+    - Where did covid come from?
+    - Which location was it first experienced?

@@ -1,0 +1,288 @@
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+- intent: book_appointment
+  examples: |
+    - I want to book an appointment
+    - Can I schedule an appointment?
+    - How do I make an appointment?
+    - Book a doctor's appointment
+    - Schedule an appointment with a physician
+    - book_appointment
+- intent: choose_category
+  examples: |
+    - [Cardiology](category)
+    - [General Surgery](category)
+    - [General Category](category)
+    - [General catogory](category)
+- intent: choose_doctor
+  examples: |
+    - [Dr.Wilson](doctor)
+    - [Dr.Moore](doctor)
+    - [Dr.Taylor](doctor)
+    - [Dr.Anderson](doctor)
+    - [Dr.Brown](doctor)
+    - [Dr.Davis](doctor)
+    - [Dr.Johnson](doctor)
+    - [Dr.Williams](doctor)
+    - [Dr.Johnson](doctor)
+- intent: user_given_date
+  examples: |
+    - I will schedule it for [next Tuesday at 3 PM](time)
+    - [This Friday](date) is good for me.
+    - How about [Wednesday morning](time)?
+    - [Thursday at 2:30 PM](time) works for me.
+    - Let's meet [tomorrow at 11 AM](time).
+    - [Next Monday](date) sounds good.
+    - How about [Sunday evening](time)?
+    - Let's do it [tomorrow at 4:45 PM](time).
+    - I'm available [on Saturday](date).
+    - How about [Thursday at 10:15 AM](time)?
+    - [Friday morning](time) is ideal.
+    - I can do [next Wednesday at 1 PM](time).
+    - Let's meet [on Monday](date).
+    - How about [Tuesday night](time)?
+    - [This Saturday at 9:30 AM](time) is free.
+    - I'm free [next Thursday](date) afternoon.
+    - How about [Wednesday at 4 PM](time)?
+    - [Friday evening](time) is a good time.
+    - I can do [next Tuesday at 2:45 PM](time).
+    - [This Sunday morning](time) is open.
+    - How about [Thursday at 3:15 PM](time)?
+    - Let's meet [tomorrow evening](time).
+    - [Next Monday at 11 AM](time) works for me.
+    - I'm available [on Saturday afternoon](time).
+    - How about [Friday at 10:30 AM](time)?
+    - [Wednesday at 9 AM](time) is ideal.
+    - Let's schedule it [next Wednesday at 3:30 PM](time).
+    - [This Thursday at 2 PM](time) is fine.
+    - I can do [on Monday at 1:45 PM](time).
+    - How about [Tuesday night at 7:15 PM](time)?
+    - [This Saturday at 10:30 AM](time) is good.
+    - I'm free [next Thursday afternoon](time).
+    - Let's meet [Wednesday at 4:45 PM](time).
+    - How about [Friday evening at 6:30 PM](time)?
+    - [Thursday at 11 AM](time) works for me.
+    - I can do [next Tuesday at 10:15 AM](time).
+    - [This Sunday at 9 AM](time) is open.
+    - How about [Thursday at 1 PM](time)?
+    - Let's schedule it [tomorrow at 3:30 PM](time).
+    - [Next Monday at 2 PM](time) is fine.
+    - I'm available [on Saturday at 1:45 PM](time).
+    - How about [Friday night at 8:15 PM](time)?
+    - [Wednesday at 10:30 AM](time) is good.
+    - I'm free [next Thursday night](time).
+    - Let's meet [Tuesday at 5:45 PM](time).
+    - How about [This Saturday at 6:30 PM](time)?
+    - I will make an appointment at [10 pm](time)
+    - [Thursday](date)
+    - [Morning 10 am](time)
+    - [Tomorrow 11 am](time)
+    - [Today 10.30 am](time)
+    - [Tomorrow evening](time)
+    - [Night](time)
+    - [tommarrow 2 pm](time)
+- intent: user_name
+  examples: |
+    - my name is [Prakash Ramu](person)
+    - it me [Manoj Kumar](person)
+    - [Kathish](person)
+    - [Arjun reddy](person)
+    - [Aravinda Rao](person)
+    - [Ashik Ali](person)
+    - [Edison](person)
+    - [Thangavel Rajasekar](person)
+    - [Alaganallur Aravindsamy](person)
+    - [Williamson warner](person)
+    - [Davidson](person)
+    - [John Doe](person)
+    - [Alice Johnson](person)
+    - [James Smith](person)
+    - [I'm Linda Brown](person)
+    - [Robert Davis](person)
+    - [Emily White](person)
+    - [It's Daniel Lee](person)
+    - [Olivia Taylor](person)
+    - [Michael Johnson](person)
+    - [Sophia Martinez](person)
+    - [David Wilson](person)
+    - [Sarah Harris](person)
+    - [William Turner](person)
+    - [Jennifer Clark](person)
+    - [Matthew Hall](person)
+    - [Emma Martin](person)
+    - [Christopher Adams](person)
+    - [Ava Allen](person)
+    - [Nicholas Miller](person)
+    - [Grace King](person)
+    - [Andrew Baker](person)
+    - [Ella Anderson](person)
+    - [Joshua Young](person)
+    - [Sophia Mitchell](person)
+    - [Benjamin Walker](person)
+    - [Chloe Hill](person)
+    - [Samuel Nelson](person)
+    - [Madison Parker](person)
+    - [Joseph Wright](person)
+    - [Avery Scott](person)
+    - [Davidson Taylor](person)
+    - [Mia Wright](person)
+    - [Elijah Turner](person)
+    - [Hannah Davis](person)
+    - [Oliver Perez](person)
+    - [Aria Jackson](person)
+    - [Daniel Garcia](person)
+    - [Sofia Rodriguez](person)
+    - [Jackson Hernandez](person)
+    - [Amelia Lewis](person)
+    - [Sebastian Adams](person)
+    - [Victoria Martinez](person)
+    - [Liam White](person)
+    - [Abigail Hall](person)
+    - [Mason Thomas](person)
+    - [Elizabeth Harris](person)
+    - [Lucas King](person)
+    - [Penelope Harris](person)
+    - [Alexander Scott](person)
+    - [Scarlett Clark](person)
+    - [Ethan Turner](person)
+    - [Harper Hill](person)
+    - [Samuel Adams](person)
+    - [Lily Perez](person)
+    - [Christopher Clark](person)
+    - [Grace Mitchell](person)
+    - [Lucas Baker](person)
+    - [Aria Anderson](person)
+    - [Aiden Taylor](person)
+    - [Zoe Hernandez](person)
+    - [William White](person)
+    - [Victoria Garcia](person)
+    - [Natalie Lewis](person)
+    - [Benjamin Jackson](person)
+    - [Mila Martinez](person)
+    - [Michael Hall](person)
+    - [Sofia Johnson](person)
+    - [Logan Martin](person)
+    - [Ava Smith](person)
+    - [Elijah Walker](person)
+    - [Scarlett King](person)
+    - [Mason Turner](person)
+    - [Ella Davis](person)
+    - [Carter Harris](person)
+    - [Daniel Clark](person)
+    - [Jackson Smith](person)
+    - [Harper Perez](person)
+    - [Aiden Lee](person)
+    - [Olivia Harris](person)
+    - [James Lewis](person)
+    - [Chloe Taylor](person)
+    - [Evelyn Adams](person)
+    - [Jacob Martin](person)
+    - [Charlotte Hill](person)
+    - [Aria Johnson](person)
+    - [Natalie Scott](person)
+    - [Samuel Jackson](person)
+    - [Mila King](person)
+    - [Logan Baker](person)
+    - [Grace White](person)
+    - [Zoe Martinez](person)
+    - [Aiden Walker](person)
+    - [Sofia Perez](person)
+    - [William Mitchell](person)
+    - [Ethan Adams](person)
+    - [Ava Turner](person)
+    - [Lucas Davis](person)
+    - [Aravind samy](person)
+    - [Vinayak Amirtharaj](person)
+- intent: user_mobile
+  examples: |
+    - [9952538089](number)
+    - my number is [9294395934](number)
+    - my mobile (9845738273)(number)
+    - this is my mobile number [9087883738](number)
+    - [7012345678](number)
+    - [9023456789](number)
+    - [8034567890](number)
+    - [9045678901](number)
+    - [8056789012](number)
+    - [9067890123](number)
+    - [8078901234](number)
+    - [9089012345](number)
+    - [8090123456](number)
+    - [9101234567](number)
+    - [8112345678](number)
+    - [9123456789](number)
+    - [8223456789](number)
+    - [9134567890](number)
+    - [8334567890](number)
+    - [9145678901](number)
+    - [8435678901](number)
+    - [9156789012](number)
+    - [8536789012](number)
+    - [9167890123](number)
+    - [8737890123](number)
+    - [9178901234](number)
+    - [8938901234](number)
+    - [9189012345](number)
+    - [9039012345](number)
+    - [9290123456](number)
+    - [9080123456](number)
+    - [9391234567](number)
+    - [9181234567](number)
+    - [9492345678](number)
+    - [9282345678](number)
+    - [9593456789](number)
+    - [9373456789](number)
+    - [9694567890](number)
+    - [9464567890](number)
+    - [9795678901](number)
+    - [9645678901](number)
+    - [9896789012](number)
+    - [9836789012](number)
+    - [9967890123](number)
+    - [9927890123](number)
+    - [9998901234](number)
+    - [9958901234](number)
+    - [9999012345](number)
+    - [9979012345](number)
+    - [9999123456](number)
+    - [9999234567](number)
+    - [9999345678](number)
+    - [9999456789](number)
+    - [9999567890](number)
+    - [9999678901](number)
+    - [9999789012](number)
+    - [9999890123](number)
+    - [9999901234](number)
+    - [9999912345](number)
+    - [9999923456](number)
+    - [9999934567](number)
+    - [9999945678](number)
+    - [9999956789](number)
+    - [9999967890](number)
+    - [9999978901](number)
+    - [9999989012](number)
+    - [9999990123](number)
+    - [9999991234](number)
+    - [9999992345](number)
+    - [9999993456](number)
+    - [9999994567](number)
+    - [9999995678](number)
+    - [9999996789](number)
+    - [9999997890](number)
+    - [9999998901](number)
+    - [8279787343](number)

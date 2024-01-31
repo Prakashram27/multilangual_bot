@@ -1,0 +1,78 @@
+version: '3.1'
+intents:
+- book_appointment
+- choose_category
+- choose_doctor
+- greet
+- user_given_date
+- user_mobile
+- user_name
+entities:
+- number
+- doctor
+- time
+- person
+- category
+slots:
+  category:
+    type: text
+    initial_value: null
+    mappings:
+    - type: from_entity
+      entity: category
+  time:
+    type: any
+    mappings:
+    - type: from_entity
+      entity: time
+  doctor:
+    type: text
+    initial_value: null
+    mappings:
+    - type: from_entity
+      entity: doctor
+  person:
+    type: text
+    initial_value: null
+    mappings:
+    - type: from_entity
+      entity: person
+  number:
+    type: any
+    initial_value: null
+    mappings:
+    - type: from_entity
+      entity: number
+responses:
+  utter_greet:
+  - text: Welcome! How can I assist you today?
+    buttons:
+    - payload: book_appointment
+      title: Book Appointment
+  utter_choose_category:
+  - text: Sure, which department are you seeking an appointment with the doctor?
+    buttons:
+    - payload: General catogory
+      title: General catogory
+    - payload: General Surgery
+      title: General Surgery
+    - payload: Cardiology
+      title: Cardiology
+  utter_ask_date:
+  - text: What time would you prefer to schedule a meeting with {doctor}
+  utter_user_name:
+  - text: Could you please provide your full name?
+  utter_ask_mobile:
+  - text: Could you please share your mobile contact number?
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+actions:
+- utter_user_name
+- action_show_details
+- utter_ask_date
+- action_show_doctors
+- utter_greet
+- utter_ask_mobile
+- utter_choose_category
+- action_extract_date

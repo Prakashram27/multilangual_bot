@@ -1,0 +1,74 @@
+version: "2.0"
+
+nlu:
+- intent: greet_luganda
+  examples: |
+    - Ki kati.
+    - Oli otya.
+    - Gyebale ko.
+    - Gyebale ko Ssebo.
+    - Gyebale ko Nyabbo.
+    - Osiibye Otya nno?
+    - Ki.
+    - Muli mutya
+
+
+
+
+- intent: goodbye_luganda
+  examples: |
+    - Weraba.
+    - Kare weraba Ssebo.
+    - Siiba bulungi.
+    - Tunaalabagana.
+    - Kale Mwattu.
+    - Mweraba
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+
+- intent: kkolona_kye_ki
+  examples: |
+    - Akawuka ka kkolona kye ki?
+    - Akawuka ka corona kye ki?
+    - Akawuka ka covid kye ki?
+    - Akawuka ka kovid kye ki?
+    - Nnyonnyola akawuka ka  kkolona.
+    - Nnyonnyola akawuka ka  corona.
+    - Nnyonnyola akawuka ka  covid.
+    - Mbuulira ku kawuka ka kkolona. 
+    - Mbuulira ku kawuka ka corona.
+    - Mbuulira ku kawuka ka kovid.
+    - Mbuulira ku kawuka ka covid.
+    - Nnyinyonyola ku kawuka ka kkolona.
+    - Nnyinyonyola ku kawuka ka corona.
+    - Oyinza kunnyonnyola otya akawuka ka kkolona?
+    - Akawuka ka kkolona.
+    - Omanyi ku bikwata ku kawuka ka kkolona?
+    - Omanyi ku bikwata ku kawuka ka covid-19?
+    - Akawuka ka kkolona ye kkovid?
+    - Njawulo ki wakati wa kkovid ne kkolona?
+    - Kkovid ye kkolona?
+    - kkovid kye ki?
+    - corona kye ki?
+    - kovid kye ki?
+    - kkovid-19 kye ki?
+    - covid-19 kye ki?
+    - nsobola okumanya ku bikwata ku kkovid-19?
+
+- intent: kkolona_eva_wa
+  examples: |
+    - Akawuka kano kaava wa?
+    - kkolona asibuka wa?
+    - kkovid-19 ava wa?
+    - kkovid yava wa?
+    - kifo ki mweyasooka okuzuulibwa 
+    - akakwuka ko kaava wa?
+    - kaava wa akawuka?
+    - simanyi kaava wa kano akawuka?
+    - ki ekyaleta kano awakuka?
+    - tumanyi gye'kaava?
+    - corona asibuka wa?
+    - covid asibuka wa?

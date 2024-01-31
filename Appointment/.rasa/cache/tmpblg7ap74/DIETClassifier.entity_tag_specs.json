@@ -1,0 +1,44 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-category",
+      "2": "I-category",
+      "3": "L-category",
+      "4": "U-category",
+      "5": "B-date",
+      "6": "I-date",
+      "7": "L-date",
+      "8": "U-date",
+      "9": "B-docter",
+      "10": "I-docter",
+      "11": "L-docter",
+      "12": "U-docter",
+      "13": "B-doctor",
+      "14": "I-doctor",
+      "15": "L-doctor",
+      "16": "U-doctor",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-category": 1,
+      "I-category": 2,
+      "L-category": 3,
+      "U-category": 4,
+      "B-date": 5,
+      "I-date": 6,
+      "L-date": 7,
+      "U-date": 8,
+      "B-docter": 9,
+      "I-docter": 10,
+      "L-docter": 11,
+      "U-docter": 12,
+      "B-doctor": 13,
+      "I-doctor": 14,
+      "L-doctor": 15,
+      "U-doctor": 16,
+      "O": 0
+    },
+    "num_tags": 17
+  }
+]

@@ -1,0 +1,2 @@
+No   Description      HSNCode/SAC   Gross WT    NetWt     Wastage   Rate     Amount       Remark
+1   Gold jewllery      711319        239.320   239.320     0.000    5425.00  1298311.00    Nill  
